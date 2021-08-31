@@ -1,5 +1,5 @@
 # Dependency Injection improvements in Asp.net Core 
-This is the source code of the article [Dependency Injection improvements in Asp.net Core](https://bit.ly/3AURJTK)
+This is the source code of the article [Dependency Injection improvements in Asp.net Core](https://bit.ly/3kD0lIr)
 
 ### How to run
   <code>
