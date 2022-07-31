@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using FluentAssertions;
 using Xunit;
-using DIImprove.Configurations;
-using DIImprove.Services;
-using DIImprove.Services.Interfaces;
+using AutoAdmin.DIImprove.WebAppConsumer.Configurations;
+using AutoAdmin.DIImprove.WebAppConsumer.Services;
+using AutoAdmin.DIImprove.WebAppConsumer.Services.Interfaces;
 using DIImproveUnitTests.Setup;
 
 namespace DIImproveUnitTests

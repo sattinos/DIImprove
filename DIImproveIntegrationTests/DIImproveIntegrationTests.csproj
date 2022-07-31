@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DIImprove\DIImprove.csproj" />
+    <ProjectReference Include="..\AutoAdmin.DIImprove.WebAppConsumer\AutoAdmin.DIImprove.WebAppConsumer.csproj" />
   </ItemGroup>
 
 </Project>

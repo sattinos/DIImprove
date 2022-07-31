@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace DIImprove.Core.Reflection
+namespace AutoAdmin.DIImprove.Core.Reflection
 {
     public static class ReflectionExtension
     {

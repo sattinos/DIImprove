@@ -4,20 +4,29 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DIImprove.Core.Reflection;
-using DIImprove.Injection.Attributes;
+using AutoAdmin.DIImprove.Core.Reflection;
+using AutoAdmin.DIImprove.Injection.Attributes;
 
-namespace DIImprove.Injection
+namespace AutoAdmin.DIImprove.Injection
 {
     public static class InjectionFactory
     {
-        public static void StartInjection(IServiceCollection services, IConfiguration configuration, Assembly assembly = null)
+        public static void StartInjection(IServiceCollection services, IConfiguration configuration, Assembly[] assemblies)
+        {
+            foreach (var assembly in assemblies)
+            {
+                InjectServices(services, assembly);
+                InjectConfigurationSections(services, configuration, assembly);
+            }
+        }
+        
+        public static void StartInjection(IServiceCollection services, IConfiguration configuration, Assembly assembly)
         {
             InjectServices(services, assembly);
             InjectConfigurationSections(services, configuration, assembly);
         }
 
-        private static void InjectConfigurationSections(IServiceCollection services, IConfiguration configuration, Assembly assembly = null)
+        private static void InjectConfigurationSections(IServiceCollection services, IConfiguration configuration, Assembly assembly)
         {
             var types = ReflectionExtension.GetTypesWithAttribute<ConfigurationSectionAttribute>(assembly);
             foreach (var type in types)
@@ -34,7 +43,7 @@ namespace DIImprove.Injection
             }
         }
 
-        private static void InjectServices(IServiceCollection services, Assembly assembly = null)
+        private static void InjectServices(IServiceCollection services, Assembly assembly)
         {
             var types = ReflectionExtension.GetTypesWithAttribute<InjectAsAttribute>(assembly);
             var serviceTypeMap = new Dictionary<ServiceLifetime, Action<Type, Type>>
@@ -54,8 +63,7 @@ namespace DIImprove.Injection
             }
         }
 
-        private static void RegisterInterfaceImplementations<TInterfaceType>(IServiceCollection services,
-            ServiceLifetime serviceLifetime, Assembly assembly = null)
+        private static void RegisterInterfaceImplementations<TInterfaceType>(IServiceCollection services, ServiceLifetime serviceLifetime, Assembly assembly)
         {
             var typeInfos = ReflectionExtension.GetInterfacesTypeInfo<TInterfaceType>(assembly);
             foreach (var typeInfo in typeInfos)

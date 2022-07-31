@@ -1,8 +1,8 @@
+using AutoAdmin.DIImprove.Injection.Attributes;
+using AutoAdmin.DIImprove.WebAppConsumer.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using DIImprove.Injection.Attributes;
-using DIImprove.Services.Interfaces;
 
-namespace DIImprove.Services
+namespace AutoAdmin.DIImprove.WebAppConsumer.Services
 {
     [InjectAs(ServiceLifetime.Transient, typeof(ISerializable))]
     public class SerializableB : ISerializable

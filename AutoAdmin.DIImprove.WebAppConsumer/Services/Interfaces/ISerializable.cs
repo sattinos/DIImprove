@@ -1,4 +1,4 @@
-namespace DIImprove.Services.Interfaces
+namespace AutoAdmin.DIImprove.WebAppConsumer.Services.Interfaces
 {
     public interface ISerializable
     {

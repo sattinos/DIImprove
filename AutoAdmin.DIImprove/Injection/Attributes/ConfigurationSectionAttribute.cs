@@ -1,6 +1,6 @@
 using System;
 
-namespace DIImprove.Injection.Attributes
+namespace AutoAdmin.DIImprove.Injection.Attributes
 {
     [AttributeUsage(System.AttributeTargets.Class)]
     public class ConfigurationSectionAttribute : Attribute

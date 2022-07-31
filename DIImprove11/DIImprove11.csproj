@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <PackageId>Sattinos.Libs.DIImprove</PackageId>
+    <TargetFramework>net5.0</TargetFramework>
+    <Title>Implicit Dependency Injection Library</Title>
+    <Authors>Mahmoud AlSati;mahmoud.alsati@gmail.com</Authors>
+    <Description>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Description>
+    <PackageProjectUrl>https://github.com/sattinos/DIImprove</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sattinos/DIImprove</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>Dependency Injection in Asp.net core</PackageTags>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageVersion>5.0.9</PackageVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyVersion>5.0.9</AssemblyVersion>
+    <FileVersion>5.0.9</FileVersion>
+    <Summary>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Summary>
+    <PackageIcon>syringe.png</PackageIcon>
+    <Copyright>Sattinos.2022</Copyright>
+    <Summary>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Summary>
+    <PackageReleaseNotes>.net 5 release</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryCommit>e39cb3809cfee36faa847ea27393428d034bf4aa</RepositoryCommit>
+    <DefaultLanguage>C#</DefaultLanguage>
+    <RootNamespace>DIImprove</RootNamespace>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAdmin.DIImprove\AutoAdmin.DIImprove.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers" />
+  </ItemGroup>
+
+</Project>

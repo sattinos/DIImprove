@@ -1,6 +1,7 @@
-using DIImprove.Injection.Attributes;
 
-namespace DIImprove.Configurations
+using AutoAdmin.DIImprove.Injection.Attributes;
+
+namespace AutoAdmin.DIImprove.WebAppConsumer.Configurations
 {
     [ConfigurationSection("AppSettings")]
     public class AppSettings

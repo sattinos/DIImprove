@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="readme.md">
+        <Pack>true</Pack>
+        <PackagePath>/</PackagePath>
+      </None>
+      <None Update="syringe.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <PackageId>Sattinos.AutoAdmin.DIImprove</PackageId>
+        <TargetFramework>net5.0</TargetFramework>
+        <Title>Implicit Dependency Injection Library</Title>
+        <Authors>Mahmoud AlSati;mahmoud.alsati@gmail.com</Authors>
+        <Description>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Description>
+        <PackageProjectUrl>https://github.com/sattinos/DIImprove</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/sattinos/DIImprove</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <PackageTags>Dependency Injection in Asp.net core</PackageTags>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>5.0.9</PackageVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <AssemblyVersion>5.0.9</AssemblyVersion>
+        <FileVersion>5.0.10</FileVersion>
+        <Summary>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Summary>
+        <PackageIcon>syringe.png</PackageIcon>
+        <Copyright>Sattinos.2022</Copyright>
+        <Summary>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Summary>
+        <PackageReleaseNotes>.net 5 release</PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <RepositoryType>git</RepositoryType>
+        <DefaultLanguage>C#</DefaultLanguage>
+
+    </PropertyGroup>
+
+</Project>

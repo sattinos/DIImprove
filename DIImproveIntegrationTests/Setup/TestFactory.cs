@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Configuration;
-using DIImprove;
+using AutoAdmin.DIImprove.WebAppConsumer;
 
 namespace DIImproveUnitTests.Setup {
     public class TestFactory : WebApplicationFactory<Startup> {

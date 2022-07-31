@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DIImprove.Injection.Attributes
+namespace AutoAdmin.DIImprove.Injection.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class InjectAsAttribute : Attribute

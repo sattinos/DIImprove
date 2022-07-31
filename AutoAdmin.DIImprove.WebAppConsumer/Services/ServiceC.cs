@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using DIImprove.Injection.Attributes;
+using AutoAdmin.DIImprove.Injection.Attributes;
 
-namespace DIImprove.Services
+namespace AutoAdmin.DIImprove.WebAppConsumer.Services
 {
     [InjectAs(ServiceLifetime.Transient)]
     public class ServiceC

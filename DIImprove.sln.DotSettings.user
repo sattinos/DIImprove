@@ -1,6 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b1b79e29_002Ddd5b_002D43e5_002Da132_002Da347c7bbe784/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DependencyInjectionTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::3B64248C-C41A-42AE-BBB6-B52E2A746D2A::net5.0::DIImproveUnitTests.DependencyInjectionTest&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=874bd7ab_002D7710_002D48a9_002Dbad4_002D9897d9697c61/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;And&gt;
+    &lt;Project Location="/home/satinos/me/personal_projects/blog/diRep/DIImproveIntegrationTests" Presentation="&amp;lt;DIImproveIntegrationTests&amp;gt;" /&gt;
+    &lt;Namespace&gt;DIImproveUnitTests&lt;/Namespace&gt;
+  &lt;/And&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

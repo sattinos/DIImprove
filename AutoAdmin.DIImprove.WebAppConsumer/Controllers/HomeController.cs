@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
+using AutoAdmin.DIImprove.WebAppConsumer.Configurations;
+using AutoAdmin.DIImprove.WebAppConsumer.Services;
+using AutoAdmin.DIImprove.WebAppConsumer.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using DIImprove.Configurations;
-using DIImprove.Services;
-using DIImprove.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 
-namespace DIImprove.Controllers
+namespace AutoAdmin.DIImprove.WebAppConsumer.Controllers
 {
     [ApiController]
     [Route("[controller]")]

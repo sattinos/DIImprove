@@ -1,6 +1,13 @@
 # Dependency Injection improvements in Asp.net Core 
 A list of attributes that allows for injecting your services/managers/etc.. directly from your class instead of Startup.cs.
 
+## How to use
+For <= .net5 projects: Inside <b>Startup.cs</b> file, put the following in the first line of the method: <b>ConfigureServices</b>:
+
+    InjectionFactory.StartInjection(services, Configuration, Assembly.GetExecutingAssembly());
+
+After that, follow either of the examples: </br>
+
 ## Example1:
 
 If you have a service called "NotificationService" that implements the interface "INotificationService" instead
