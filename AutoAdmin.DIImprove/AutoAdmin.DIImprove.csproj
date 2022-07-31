@@ -33,10 +33,10 @@
         <PackageTags>Dependency Injection in Asp.net core</PackageTags>
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>5.0.9</PackageVersion>
+        <PackageVersion>5.0.14</PackageVersion>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <AssemblyVersion>5.0.9</AssemblyVersion>
-        <FileVersion>5.0.10</FileVersion>
+        <FileVersion>5.0.14</FileVersion>
         <Summary>Dependency injection attributes that allows for injecting in the service class rather than Startup.cs</Summary>
         <PackageIcon>syringe.png</PackageIcon>
         <Copyright>Sattinos.2022</Copyright>
