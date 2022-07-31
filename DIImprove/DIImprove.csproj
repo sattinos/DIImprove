@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <PackageId>Sattinos.Libs.DIImprove</PackageId>
     <TargetFramework>net5.0</TargetFramework>
     <Title>Implicit Dependency Injection Library</Title>
     <Authors>Mahmoud AlSati</Authors>
@@ -13,7 +14,7 @@
     <PackageTags>Dependency Injection in Asp.net core</PackageTags>
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageVersion>5.0.7</PackageVersion>
+    <PackageVersion>5.0.8</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
